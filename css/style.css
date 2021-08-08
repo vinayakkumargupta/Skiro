@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins',sans-serif;
+}
+:root{
+    --black:#111;
+    --black1:#222;
+    --black2:#333;
+    --white:#fff;
+    --grey: #808080;
+}
+.dark{
+    --black:#eee;
+    --black1:#ddd;
+    --black2:#ccc;
+    --white:#000;
+    --grey: #808080;
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    height: 60px;
+    padding:0 80px;
+    color: var(--white);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+header .dark{
+    border-bottom: 2px solid rgba(255, 255, 255, 1);    
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo .img{
+    margin-right: 8px;
+}
+.logo .img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+a{
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.logo a h2{
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 22px;
+}
+.nav-item ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item ul li{
+    list-style: none;
+    padding: 8px 15px;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.nav-item ul li:hover {
+    background-color: var(--black1);
+}
+.lnav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login{
+    border: 2px solid var(--white);
+    padding: 4px 6px;
+    border-radius: 5px;
+    transition:all 0.2s;
+    margin-right: 10px;
+}
+.login a{
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 300;
+    transition:all 0.2s;
+}
+.login:hover {
+    border: 2px solid var(--grey);
+}
+.login:hover a{
+    color: var(--grey);
+}
+.themeswitch .fa{
+    width: 30px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: 2px solid var(--white);
+    padding: 15px;
+    border-radius: 50%;
+    height: 30px;
+    cursor: pointer;
+}
+section{
+    position: relative;
+    min-height: 100vh;
+    background: var(--black1);
+} 
