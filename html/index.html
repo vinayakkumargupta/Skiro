@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body">
+        <header>
+          <div class="logo">
+              <div class="img">
+                  <img src="../picture/pic.jpg" alt="image">
+              </div>
+              <div class="name">
+                  <a href="#"><h2>SKIRO</h2></a>
+              </div>
+          </div>
+          <div class="nav-item">
+              <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Test</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+          <div class="lnav">
+            <div class="login">
+                <a href="#">login <i class="fa fa-arrow-right"></i></a>
+                
+            </div>
+            <div class="themeswitch">
+                <i class="fa fa-moon" aria-hidden="true"></i>
+             </div>
+          </div>
+        </header>  
+        <section id="home">
+            
+        </section>
+        <section id="about">
+
+        </section>
+    </div>
+</body>
+<script>
+    let themeswitch = document.querySelector('.themeswitch');
+   let body = document.querySelector('body')
+   themeswitch.onclick = function () {
+      body.classList.toggle('dark')
+   }
+</script>
+</html>
