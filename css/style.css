@@ -32,7 +32,7 @@ header{
     border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }
 header .dark{
-    border-bottom: 2px solid rgba(255, 255, 255, 1);    
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
 }
 .logo{
     display: flex;
@@ -114,4 +114,9 @@ section{
     position: relative;
     min-height: 100vh;
     background: var(--black1);
-} 
+}
+#vector{
+  background: url('picture/banner.png');
+  background-size: cover;
+  height:70vh;
+}
