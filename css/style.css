@@ -116,14 +116,14 @@ section{
     background: var(--black1);
 }
 .vector{
-  background: url('../picture/banner.png');
-  opacity: 0.4;
+  background: url('../picture/Untitled.svg');
+  opacity: 0.9;
   background-size: cover;
   height:100vh;
 }
 .banner-text{
   text-align: center;
-  color: #fff;
+  color: #000;
   padding-top: 180px;
 }
 .banner-text h1 {
