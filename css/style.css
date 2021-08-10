@@ -12,6 +12,7 @@
     --black2:#333;
     --white:#fff;
     --grey: #808080;
+    --orange:#FF4500;
 }
 .dark{
     --black:#eee;
@@ -19,6 +20,7 @@
     --black2:#ccc;
     --white:#000;
     --grey: #808080;
+    --orange:#FF9500;
 }
 header{
     position: relative;
@@ -56,6 +58,8 @@ a{
     letter-spacing: 2px;
     font-weight: 600;
     font-size: 22px;
+    font-family: 'Kaushan Script', cursive;
+
 }
 .nav-item ul{
     display: flex;
@@ -113,10 +117,12 @@ a{
 section{
     position: relative;
     min-height: 100vh;
-    background: var(--black1);
+    background: var(--black);
 }
+
+/* banner Css */
 .vector{
-  background: url('../picture/Untitled.svg');
+  background: url('../picture/banner.svg');
   opacity: 0.9;
   background-size: cover;
   height:100vh;
@@ -133,7 +139,7 @@ section{
 .banner-text h4{
   font-size: 60px;
   font-style: italic;
-  font-family: 'STIX Two Text', serif;
+  font-family: 'Gochi Hand', cursive;
 }
 
 /* Contact us- CSS */
