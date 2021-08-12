@@ -1,3 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins',sans-serif;
+}
+:root{
+    --black:#111;
+    --black1:#222;
+    --black2:#333;
+    --white:#fff;
+    --grey: #808080;
+    --orange:#FF4500;
+}
+.dark{
+    --black:#eee;
+    --black1:#ddd;
+    --black2:#ccc;
+    --white:#000;
+    --grey: #808080;
+    --orange:#FF9500;
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    height: 60px;
+    padding:0 80px;
+    color: var(--white);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+header .dark{
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 * {
@@ -20,6 +59,7 @@
   --c-red-s: 87%;
   --c-red-l: 57%;
   --c-red: rgb(255, 64, 0);
+
 }
 .dark {
   transition: all 0.3s;
@@ -47,6 +87,13 @@ header .dark {
   justify-content: space-evenly;
   align-items: center;
 }
+
+.logo a h2{
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: 'Kaushan Script', cursive;
+  
 .logo .img {
   margin-right: 8px;
 }
@@ -364,6 +411,178 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    font-size: 20px;
+    border: 2px solid var(--white);
+    padding: 15px;
+    border-radius: 50%;
+    height: 30px;
+    cursor: pointer;
+}
+section{
+    position: relative;
+    min-height: 100vh;
+    background: var(--black);
+}
+
+/* banner Css */
+.vector{
+  background: url('../picture/banner.svg');
+  opacity: 0.9;
+  background-size: cover;
+  height:100vh;
+}
+.banner-text{
+  text-align: center;
+  color: #000;
+  padding-top: 180px;
+}
+.banner-text h1 {
+  font-size: 130px;
+  font-family: 'Kaushan Script', cursive;
+}
+.banner-text h4{
+  font-size: 60px;
+  font-style: italic;
+  font-family: 'Gochi Hand', cursive;
+}
+
+/* Contact us- CSS */
+
+.container{
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+.container .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #5029bc;
+}
+
+@media (max-width: 950px) {
+  .container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container .content{
+    flex-direction: column-reverse;
+  }
+ .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .left-side::before{
+   display: none;
+ }
+ .container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+
     margin: 0 2px;
   }
   .contact-main input,
@@ -501,4 +720,5 @@ textarea {
     font-size: 13px;
     letter-spacing: 0;
   }
+
 }

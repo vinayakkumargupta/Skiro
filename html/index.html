@@ -18,6 +18,23 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
       integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Skiro</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=STIX+Two+Text&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+
+
+</head>
+
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -26,6 +43,7 @@
   </head>
 
   <body>
+
     <div class="body">
       <header>
         <div class="logo">
@@ -37,10 +55,21 @@
               <h2>SKIRO</h2>
             </a>
           </div>
+
+          <div class="nav-item">
+              <ul>
+                  <li><a href="#home">Home</a></li>
+
+                  <li><a href="#">Test</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+
         </div>
         <span>
           <div class="menu-toggle">
             <i class="fa fa-bars bar"></i>
+
           </div>
         </span>
 
@@ -53,15 +82,108 @@
           </ul>
           <div class="lnav">
             <div class="login">
+
+                <a href="#">login <i class="fa fa-arrow-right"></i></a>
+
+
               <a href="https://apis.google.com/js/platform.js" target="_blank">
                 login
                 <i class="fa fa-arrow-right"></i
               ></a>
+
             </div>
             <div class="themeswitch">
               <i class="fa fa-moon" aria-hidden="true"></i>
             </div>
           </div>
+
+        </header>
+
+
+        <section id="banner">
+
+          <div class = "vector">
+            <div class="banner-text">
+            <h1>SKIRO</h1>
+            <h4>Reach your pinnacle with SKIRO</h4>
+            </div>
+
+          </div>
+
+
+
+
+        </section>
+
+        <section id="home">
+
+        </section>
+        <section id="about">
+
+        </section>
+
+        <section id="test">
+
+        </section>
+
+        <section id="contact">
+
+          <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <!-- <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Surkhet, NP12</div>
+          <div class="text-two">Birendranagar 06</div> -->
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">Phone Number1</div>
+          <div class="text-two">Phone Number2</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">Email1</div>
+          <div class="text-two">Email-2</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>If you want to be tutored personally or have any queries regarding the quiz, you can send me message from here. It's my pleasure to help you.</p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your email">
+        </div>
+        <div class="input-box message-box">
+
+        </div>
+        <div class="button">
+          <input type="button" value="Send Now" >
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+
+        </section>
+
+
+    </div>
+</body>
+<script>
+    let themeswitch = document.querySelector('.themeswitch');
+   let body = document.querySelector('body')
+   themeswitch.onclick = function () {
+      body.classList.toggle('dark')
+   }
+</script>
+
         </div>
       </header>
     </div>
@@ -221,4 +343,5 @@
       nav.classList.toggle("active");
     };
   </script>
+
 </html>
